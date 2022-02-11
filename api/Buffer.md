@@ -16,11 +16,9 @@ local buffer = BufferModule.new(tool, "ProjectileBuffer")
 
 ## Properties
 
-<span style="color:blue">some *blue* text</span>.
-
 ### instance *(read only)*
 Buffer.instance: [Folder](https://developer.roblox.com/api-reference/class/Folder)
-
+<font color='red'>test blue color font</font>
 
 ## Functions
 `GetUnsortedItems`
