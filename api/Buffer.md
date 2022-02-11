@@ -7,8 +7,6 @@ theme: default
 **(actual links need to be added here)**
 An object created when calling [`BufferModule:CreateBuffer()`](/BufferModule#CreateBuffer) or [`BufferModule.new()`](/BufferModule#CreateBuffer).
 
-`print("This is a Lua syntax test")`{:.lua}
-
 ```lua
 local tool = script.Parent
 local BufferModule = require(somewhere.BufferModule)
@@ -18,8 +16,8 @@ local buffer = BufferModule.new(tool, "ProjectileBuffer")
 ```
 
 - [Properties](#properties)
-  - [INSTANCE](#instance)
-  - [itemContainer](#itemcontainer)
+  - [INSTANCE](#instance-read-only)
+  - [itemContainer](#instance-read-only)
 - [Functions](#functions)
   - [new](#new)
   - [Is](#is)
