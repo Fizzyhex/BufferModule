@@ -26,15 +26,18 @@ References the Instance that the Buffer was attached to when created.
 
 References the folder created by the Buffer to store items. The folder (in most cases) will be stored as a child of the instance the buffer is attached to.
 
-### 
-
 ## Functions
 
 ### new
 - Buffer.new(attachTo: Instance, name: string?): Buffer
 
-Constructs a new Buffer object. If no name is provided, the Buffer's [itemContainer](#itemContainer) will be called
+Constructs a new Buffer object. If no name is provided, the Buffer's [Item Container](#itemContainer) will be called 'UnnamedBuffer' by default.
 
-`GetUnsortedItems`
+**Note:** If you want to have multiple Buffers underneath the same object, a name **must** be provided to avoid conflict!
+
+### GetUnsortedItems
+- Buffer:GetUnsortedItems(): {[Instance](https://developer.roblox.com/api-reference/class/Instance)}
+
+Returns a table of all items that are currently in the Buffer. 
 
 ## Events
