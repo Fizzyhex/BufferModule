@@ -137,4 +137,6 @@ If an item constructor has already been set, the new one will override it.
 
 Adds a new item to the end of the Buffer. The item parameter accepts a [`Model`](https://developer.roblox.com/api-reference/class/Model) with a [`PrimaryPart`](https://developer.roblox.com/api-reference/class/PrimaryPart), or a [`BasePart`](https://developer.roblox.com/api-reference/class/BasePart).
 
+When an item is added to a Buffer, you should not try to reposition it, change its velocity, or add active Constraints/BodyMovers. This should be done after the item is popped from the Buffer.
+
 ## Events
