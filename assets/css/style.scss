@@ -1,6 +1,8 @@
 ---
 ---
 
+@import "{{ site.theme }}";
+
 {% if site.darkmode %}
 @import 'darkmode';
 {% endif %}
