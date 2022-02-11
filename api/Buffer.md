@@ -21,7 +21,7 @@ local buffer = BufferModule.new(tool, "ProjectileBuffer")
 
 References the Instance that the Buffer was attached to when created.
 
-### <a name="itemContainer"></a> itemContainer <font color='red'>Read Only</font>
+### <a name="itemContainer"></a> itemContainer <font color='brown'>Read Only</font>
 - Buffer.itemContainer: [Folder](https://developer.roblox.com/api-reference/class/Folder)
 
 References the folder created by the Buffer to store items. The folder (in most cases) will be stored as a child of the instance the buffer is attached to.
