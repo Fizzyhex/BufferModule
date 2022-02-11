@@ -1,2 +1,5 @@
 theme: jekyll-theme-cayman
 show_downloads: true
+
+title: BufferModule
+description: A system built to help combat input latency with physics-based tools on Roblox.
