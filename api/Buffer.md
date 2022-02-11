@@ -35,14 +35,15 @@ Constructs a new Buffer object. If no name is provided, the Buffer's [Item Conta
 
 **Note:** If you want to have multiple Buffers underneath the same object, a name **must** be provided to avoid conflict!
 
+### Is
+- Buffer.Is(object: any): boolean
+
+Returns true/false if the provided object is a Buffer. 
+
 ### Destroy
 - Buffer:Destroy():
 
-Acts as a destructor. Disconnects all connections and deletes the Buffer's [Item Container](#itemContainer).
-
-Constructs a new Buffer object. If no name is provided, the Buffer's [Item Container](#itemContainer) will be called 'UnnamedBuffer' by default.
-
-**Note:** If you want to have multiple Buffers underneath the same object, a name **must** be provided to avoid conflict!
+A destructor function that disconnects all script connections. If called on the server, then the Buffer's [Item Container](#itemContainer) will also be destroyed.
 
 ### GetUnsortedItems
 
