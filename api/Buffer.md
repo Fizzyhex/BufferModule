@@ -2,6 +2,18 @@
 theme: default
 ---
 
+<style>
+.read-only-tag span {
+  content: "Read Only";
+  color: "Crimson";
+}
+  
+.server-prefix span {
+  content: "Server: ";
+  color: "CornflowerBlue";
+}
+</style>
+
 ## Buffer
 
 An object created when calling [`BufferModule:CreateBuffer()`]() or [`BufferModule.new()`]().
@@ -16,12 +28,12 @@ local buffer = BufferModule.new(tool, "ProjectileBuffer")
 
 ## Properties
 
-### INSTANCE <font color='FireBrick'>Read Only</font>
+### INSTANCE <span class="read-only-tag"/>
 - Buffer.INSTANCE: [Instance](https://developer.roblox.com/api-reference/class/Instance)
 
 References the Instance that the Buffer was attached to when created.
 
-### <a name="itemContainer"></a> itemContainer <font color='FireBrick'>[Read Only]</font>
+### <a name="itemContainer"></a> itemContainer <span class="read-only-tag"/>
 - Buffer.itemContainer: [Folder](https://developer.roblox.com/api-reference/class/Folder)
 
 References the folder created by the Buffer to store items. The folder (in most cases) will be stored as a child of the instance the buffer is attached to.
@@ -41,7 +53,7 @@ Constructs a new Buffer object. If no name is provided, the Buffer's [Item Conta
 
 Returns a table of all items that are currently in the Buffer. 
 
-### Server: Refill()
+### <span class="server-prefix"/> Refill()
 - Buffer:Refill()
 
 Refills the buffer using the provided function set with `SetItemConstructer`. This will insure that the Buffer has at least the amount of items specified with `SetMinimumItems`, or one by default.
@@ -52,7 +64,7 @@ buffer:Refill() -- Refill the buffer. This will add 4 items to the buffer's Item
 Buffer:Refill() -- The buffer is already full, so this will do nothing.
 ```
 
-### Server: SetAutoRefillEnabled
+### <span class="server-prefix"/> SetAutoRefillEnabled
 - Buffer:SetAutoRefillEnabled(enabled: boolean)
 
 If true, the Buffer will automatically refill when it goes underneath the threshold specified by minimum items threshold (one by default).
