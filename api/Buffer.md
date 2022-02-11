@@ -2,7 +2,7 @@
 theme: default
 ---
 
-## Buffer
+## Buffer 2
 
 An object created when calling [`BufferModule:CreateBuffer()`]() or [`BufferModule.new()`]().
 
@@ -21,7 +21,7 @@ local buffer = BufferModule.new(tool, "ProjectileBuffer")
 
 References the Instance that the Buffer was attached to when created.
 
-### <a name="itemContainer"></a> itemContainer <span class="read-only-tag"/>
+### itemContainer <span class="read-only-tag"/>
 - Buffer.itemContainer: [Folder](https://developer.roblox.com/api-reference/class/Folder)
 
 References the folder created by the Buffer to store items. The folder (in most cases) will be stored as a child of the instance the buffer is attached to.
