@@ -68,7 +68,7 @@ A destructor function that disconnects all script connections. If called on the 
 
 Returns a table of all items that are currently in the Buffer. 
 
-### <span class="server-prefix">Server:</span> Refill()
+### <span class="server-prefix">Server:</span> Refill
 `Buffer:Refill()`
 
 Refills the buffer using the provided function set with `SetItemConstructer`. This will insure that the Buffer has at least the amount of items specified with `SetMinimumItems`, or one by default.
