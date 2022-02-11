@@ -16,11 +16,25 @@ local buffer = BufferModule.new(tool, "ProjectileBuffer")
 
 ## Properties
 
-### instance *(read only)*
-Buffer.instance: [Folder](https://developer.roblox.com/api-reference/class/Folder)
-<font color='red'>test blue color font</font>
+### INSTANCE <font color='red'>Read Only</font>
+- Buffer.INSTANCE: [Instance](https://developer.roblox.com/api-reference/class/Instance)
+
+References the Instance that the Buffer was attached to when created.
+
+### <a name="itemContainer"></a> itemContainer <font color='red'>Read Only</font>
+- Buffer.itemContainer: [Folder](https://developer.roblox.com/api-reference/class/Folder)
+
+References the folder created by the Buffer to store items. The folder (in most cases) will be stored as a child of the instance the buffer is attached to.
+
+### 
 
 ## Functions
+
+### new
+- Buffer.new(attachTo: Instance, name: string?): Buffer
+
+Constructs a new Buffer object. If no name is provided, the Buffer's [itemContainer](#itemContainer) will be called
+
 `GetUnsortedItems`
 
 ## Events
