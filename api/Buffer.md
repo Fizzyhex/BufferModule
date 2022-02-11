@@ -2,18 +2,6 @@
 theme: default
 ---
 
-<style>
-read-only-tag {
-  content: "Read Only";
-  color: "Crimson";
-}
-  
-server-prefix {
-  content: "Server: ";
-  color: "CornflowerBlue";
-}
-</style>
-
 ## Buffer
 
 An object created when calling [`BufferModule:CreateBuffer()`]() or [`BufferModule.new()`]().
