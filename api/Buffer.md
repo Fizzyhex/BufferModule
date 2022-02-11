@@ -15,21 +15,21 @@ local BufferModule = require(somewhere.BufferModule)
 local buffer = BufferModule.new(tool, "ProjectileBuffer")
 ```
 
-- [Properties](#Properties)
-  - [INSTANCE](#INSTANCE)
-  - [itemContainer](#itemContainer)
-- [Functions](#Functions)
+- [Properties](#properties)
+  - [INSTANCE](#instance)
+  - [itemContainer](#itemcontainer)
+- [Functions](#functions)
   - [new](#new)
-  - [Is](#Is)
-  - [Destroy](#Destroy)
-  - [GetUnsortedItems](#GetUnsortedItems)
-  - [Refill](#server-Refill)
-  - [SetAutoRefillEnabled](#server-SetAutoRefillEnabled)
-  - [GetCurrentPlayer](#server-GetCurrentPlayer)
-  - [SetCurrentPlayer](#server-SetCurrentPlayer)
-  - [SetItemConstructor](#server-SetItemConstructor)
-  - [AddItem](#server-AddItem)
-- [Events](#Events)
+  - [Is](#is)
+  - [Destroy](#destroy)
+  - [GetUnsortedItems](#getunsorteditems)
+  - [Refill](#server-refill)
+  - [SetAutoRefillEnabled](#server-setautorefillenabled)
+  - [GetCurrentPlayer](#server-getcurrentplayer)
+  - [SetCurrentPlayer](#server-setcurrentplayer)
+  - [SetItemConstructor](#server-setitemconstructor)
+  - [AddItem](#server-additem)
+- [Events](#events)
 
 ## Properties
 
@@ -48,7 +48,7 @@ References the folder created by the Buffer to store items. The folder (in most 
 ### new
 - Buffer.new(attachTo: [Instance](https://developer.roblox.com/api-reference/class/Instance), name: string?): Buffer
 
-Constructs a new Buffer object. If no name is provided, the Buffer's [Item Container](#itemContainer) will be called 'UnnamedBuffer' by default.
+Constructs a new Buffer object. If no name is provided, the Buffer's [Item Container](#itemcontainer) will be called 'UnnamedBuffer' by default.
 
 **Note:** If you want to have multiple Buffers underneath the same object, a name **must** be provided to avoid conflict!
 
@@ -60,7 +60,7 @@ Returns true/false if the provided object is a Buffer.
 ### Destroy
 - Buffer:Destroy():
 
-A destructor function that disconnects all script connections. If called on the server, then the Buffer's [Item Container](#itemContainer) will also be destroyed.
+A destructor function that disconnects all script connections. If called on the server, then the Buffer's [Item Container](#itemcontainer) will also be destroyed.
 
 ### GetUnsortedItems
 
@@ -123,7 +123,7 @@ Returns the player that currently has ownership over the Buffer. Returns `nil` i
 
 Sets the current player that owns the Buffer. This will update the NetworkOwnership of all items currently in the Buffer automatically.
 
-This function **must be called at least once** before [`Buffer:PopItem()`](#PopItem) can be used.
+This function **must be called at least once** before [`Buffer:PopItem()`](#popitem) can be used.
 
 ### <span class="server-prefix">Server:</span> SetItemConstructor
 - Buffer:SetItemConstructor(func: function):
