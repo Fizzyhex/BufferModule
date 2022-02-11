@@ -4,7 +4,8 @@ theme: default
 
 ## Buffer
 
-An object created when calling [`BufferModule:CreateBuffer()`]() or [`BufferModule.new()`]().
+**(actual links need to be added here)**
+An object created when calling [`BufferModule:CreateBuffer()`](/BufferModule#CreateBuffer) or [`BufferModule.new()`](/BufferModule#CreateBuffer).
 
 ```lua
 local tool = script.Parent
@@ -13,6 +14,22 @@ local BufferModule = require(somewhere.BufferModule)
 -- Create a buffer attached to the tool this script is in and name it 'Projectile Buffer'
 local buffer = BufferModule.new(tool, "ProjectileBuffer")
 ```
+
+- [Properties](#Properties)
+  - [INSTANCE](#INSTANCE)
+  - [itemContainer](#itemContainer)
+- [Functions](#Functions)
+  - [new](#new)
+  - [Is](#Is)
+  - [Destroy](#Destroy)
+  - [GetUnsortedItems](#GetUnsortedItems)
+  - [Refill](#Refill)
+  - [SetAutoRefillEnabled](#SetAutoRefillEnabled)
+  - [GetCurrentPlayer](#GetCurrentPlayer)
+  - [SetCurrentPlayer](#SetCurrentPlayer)
+  - [SetItemConstructor](#SetItemConstructor)
+  - [AddItem](#AddItem)
+- [Events](#Events)
 
 ## Properties
 
@@ -91,13 +108,8 @@ tool.Activated:Connect(function()
 end)
 ```
 
-### <span class="server-prefix">Server:</span> GetPlayer
-- Buffer:GetPlayer(): Player?
-
-Returns the player that currently has ownership over the Buffer.
-
-### <span class="server-prefix">Server:</span> GetPlayer
-- Buffer:GetPlayer(): Player?
+### <span class="server-prefix">Server:</span> GetCurrentPlayer
+- Buffer:GetCurrentPlayer(): Player?
 
 Returns the player that currently has ownership over the Buffer.
 
