@@ -16,7 +16,7 @@ local buffer = BufferModule.new(tool, "ProjectileBuffer")
 
 ## Properties
 
-### INSTANCE <font color='red'>Read Only</font>
+### INSTANCE <font color='FireBrick'>Read Only</font>
 - Buffer.INSTANCE: [Instance](https://developer.roblox.com/api-reference/class/Instance)
 
 References the Instance that the Buffer was attached to when created.
