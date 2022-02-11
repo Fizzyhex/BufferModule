@@ -2,7 +2,7 @@
 theme: default
 ---
 
-## Buffer 3
+## Buffer 4
 
 An object created when calling [`BufferModule:CreateBuffer()`]() or [`BufferModule.new()`]().
 
