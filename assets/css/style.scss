@@ -3,11 +3,11 @@
 
 @import "{{ site.theme }}";
 span.read-only-tag {
-  content: "Read Only";
-  color: "Crimson";
+  content: "";
+  color: crimson;
 }
   
 span.server-prefix {
-  content: "Server: ";
-  color: "CornflowerBlue";
+  content: "";
+  color: cornflowerblue;
 }
