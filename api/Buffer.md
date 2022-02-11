@@ -3,12 +3,12 @@ theme: default
 ---
 
 <style>
-.read-only-tag span {
+span.read-only-tag {
   content: "Read Only";
   color: "Crimson";
 }
   
-.server-prefix span {
+span.server-prefix {
   content: "Server: ";
   color: "CornflowerBlue";
 }
