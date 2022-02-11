@@ -5,5 +5,5 @@
 TODO
 
 ## Documentation
-- [BufferModule](BufferModule)
-  - [Buffer (object)](Buffer)
+- [BufferModule](docs/BufferModule)
+  - [Buffer (object)](docs/Buffer)
