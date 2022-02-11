@@ -29,7 +29,7 @@ References the folder created by the Buffer to store items. The folder (in most 
 ## Functions
 
 ### new
-- Buffer.new(attachTo: Instance, name: string?): Buffer
+- Buffer.new(attachTo: [Instance](https://developer.roblox.com/api-reference/class/Instance), name: string?): Buffer
 
 Constructs a new Buffer object. If no name is provided, the Buffer's [Item Container](#itemContainer) will be called 'UnnamedBuffer' by default.
 
