@@ -35,6 +35,15 @@ Constructs a new Buffer object. If no name is provided, the Buffer's [Item Conta
 
 **Note:** If you want to have multiple Buffers underneath the same object, a name **must** be provided to avoid conflict!
 
+### Destroy
+- Buffer:Destroy():
+
+Acts as a destructor. Disconnects all connections and deletes the Buffer's [Item Container](#itemContainer).
+
+Constructs a new Buffer object. If no name is provided, the Buffer's [Item Container](#itemContainer) will be called 'UnnamedBuffer' by default.
+
+**Note:** If you want to have multiple Buffers underneath the same object, a name **must** be provided to avoid conflict!
+
 ### GetUnsortedItems
 
 - Buffer:GetUnsortedItems(): [Instance](https://developer.roblox.com/api-reference/class/Instance)
@@ -53,7 +62,7 @@ Buffer:Refill() -- The buffer is already full, so this will do nothing.
 ```
 
 ### <span class="server-prefix">Server:</span> SetAutoRefillEnabled
-- Buffer:SetAutoRefillEnabled(enabled: boolean)
+- Buffer:SetAutoRefillEnabled(enabled: boolean): self
 
 If true, the Buffer will automatically refill when it goes underneath the threshold specified by minimum items threshold (one by default).
 
@@ -80,5 +89,39 @@ tool.Activated:Connect(function()
   end
 end)
 ```
+
+### <span class="server-prefix">Server:</span> GetPlayer
+- Buffer:GetPlayer(): Player?
+
+Returns the player that currently has ownership over the Buffer.
+
+### <span class="server-prefix">Server:</span> GetPlayer
+- Buffer:GetPlayer(): Player?
+
+Returns the player that currently has ownership over the Buffer.
+
+### <span class="server-prefix">Server:</span> SetMinimumItems
+- Buffer:SetMinimumItems(amount: number): self
+
+Returns the player that currently has ownership over the Buffer. Returns `nil` if no player owns it.
+
+### <span class="server-prefix">Server:</span> SetCurrentPlayer
+- Buffer:SetCurrentPlayer(player: Player?):
+
+Sets the current player that owns the Buffer. This will update the NetworkOwnership of all items currently in the Buffer automatically.
+
+This function **must be called at least once** before [`Buffer:PopItem()`](#PopItem) can be used.
+
+### <span class="server-prefix">Server:</span> SetItemConstructor
+- Buffer:SetItemConstructor(func: function):
+
+Sets the current item constructor function to the provided function. This will be called when refilling the Buffer.
+
+If an item constructor has already been set, the new one will override it.
+
+### <span class="server-prefix">Server:</span> AddItem
+- Buffer:AddItem(item: Model | BasePart)
+
+Adds a new item to the end of the Buffer. The item parameter accepts a [`Model`](https://developer.roblox.com/api-reference/class/Model) with a [`PrimaryPart`](https://developer.roblox.com/api-reference/class/PrimaryPart), or a [`BasePart`](https://developer.roblox.com/api-reference/class/BasePart).
 
 ## Events
