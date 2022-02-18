@@ -1,3 +1,5 @@
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+
 ![Superball Example](/images/SuperballGif.gif)
 
 ## Documentation
@@ -37,3 +39,7 @@ As nice as the system sounds, it does come with some clear caveats that may infl
 ### Usage
 
 See the [documentation](https://virshal.github.io/BufferModule/) to find out how to implmenet the system in your own experiences. An example place can be found in the [releases tab](https://github.com/Virshal/BufferModule/releases).
+
+---
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/J3J8AN7RG)
