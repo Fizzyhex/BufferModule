@@ -1,10 +1,19 @@
 ![Superball Example Image](/images/SuperballGif.gif)
 
+- [About](#about)
+- [Why this method?](#why-this-method)
+- [How does this work?](#how-does-this-work)
+- [Caveats](#caveats)
+- [Getting Started](#getting-started)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Documentation](#documentation)
+
 ## About
 
 A system built to help combat input latency when using physics on Roblox. This system is built using the principles described by TheNexusAvenger in [this article on his website](https://www.thenexusavenger.io/article/6/making-no-latency-projectile-weapons-on-roblox).
 
-## What's special about this implementation of the method?
+## Why this method?
 
 1. Support for multiple items inside of the Buffer
 2. Security features that help protect against abuse of the system
@@ -22,7 +31,7 @@ As nice as the system sounds, it does come with some clear caveats that may infl
 - This method is not supported natively by the Roblox Engine. This comes with some weird downsides, such as how buffered items need to be stored as descendants of the Workspace, or how buffered items cannot be Anchored until they are removed from the buffer.
 - The client has control over the physicxs of items in the buffer. This comes with the usual security concerns of giving the client [NetworkOwnership](https://developer.roblox.com/articles/Network-Ownership) over parts.
 
-## Getting started
+## Getting Started
 
 ### Install
 
@@ -34,7 +43,7 @@ As nice as the system sounds, it does come with some clear caveats that may infl
 
 See the [documentation below](#Documentation) below to find out how to implmenet the system in your own experiences. An example place can be found in the [releases tab](https://github.com/Virshal/BufferModule/releases).
 
-## Documentation
+### Documentation
 
 - [BufferModule](api/BufferModule)
   - [Buffer (object)](api/Buffer)
