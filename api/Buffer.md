@@ -2,10 +2,11 @@
 theme: default
 ---
 
+[< Back to main page](/)
+
 ## Buffer
 
-**(actual links need to be added here)**
-An object created when calling [`BufferModule:CreateBuffer()`](/BufferModule#CreateBuffer) or [`BufferModule.new()`](/BufferModule#CreateBuffer).
+An object created when calling [`BufferModule:CreateBuffer()`](/BufferModule#CreateBuffer). A Buffer will handle the storing of instances in a folder, known as the 'item container'.
 
 ```lua
 local tool = script.Parent
