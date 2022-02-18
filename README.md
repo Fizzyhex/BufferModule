@@ -1,5 +1,9 @@
 ![Superball Example](/images/SuperballGif.gif)
 
+## Documentation
+
+[The documentation can be found here](https://virshal.github.io/BufferModule/).
+
 ## About
 
 A system built to help combat input latency when using physics on Roblox. This system is built using the principles described by TheNexusAvenger in [this article on his website](https://www.thenexusavenger.io/article/6/making-no-latency-projectile-weapons-on-roblox).
@@ -32,8 +36,4 @@ As nice as the system sounds, it does come with some clear caveats that may infl
 
 ### Usage
 
-See the [documentation below](#Documentation) below to find out how to implmenet the system in your own experiences. An example place can be found in the [releases tab](https://github.com/Virshal/BufferModule/releases).
-
-### Documentation
-
-[The documentation can be found here!](https://virshal.github.io/BufferModule/)
+See the [documentation](#Documentation) to find out how to implmenet the system in your own experiences. An example place can be found in the [releases tab](https://github.com/Virshal/BufferModule/releases).
