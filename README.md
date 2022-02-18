@@ -1,5 +1,3 @@
-![Superball Example Image](/images/SuperballGif.gif)
-
 ## About
 
 A system built to help combat input latency when using physics on Roblox. This system is built using the principles described by TheNexusAvenger in [this article on his website](https://www.thenexusavenger.io/article/6/making-no-latency-projectile-weapons-on-roblox).
