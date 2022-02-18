@@ -6,8 +6,6 @@ theme: default
 
 ## BufferModule
 
-The main module responsible for housing everything else.
-
 ```lua
 local BufferModule = require(ReplicatedStorage.BufferModule)
 
