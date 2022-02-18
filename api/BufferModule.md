@@ -2,7 +2,7 @@
 theme: default
 ---
 
-[< Back to main page](/)
+[< Back to main page](/index)
 
 ## BufferModule
 
