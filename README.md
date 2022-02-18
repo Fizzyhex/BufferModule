@@ -10,7 +10,7 @@
 
 A system built to help combat input latency when using physics on Roblox. This system is built using the principles described by TheNexusAvenger in [this article on his website](https://www.thenexusavenger.io/article/6/making-no-latency-projectile-weapons-on-roblox).
 
-## Why this method?
+## Why use this implementation?
 
 1. Support for multiple items inside of the Buffer
 2. Security features that help protect against abuse of the system
