@@ -47,3 +47,7 @@ See the [documentation below](#Documentation) below to find out how to implmenet
 
 - [BufferModule](api/BufferModule)
   - [Buffer (object)](api/Buffer)
+
+---
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/J3J8AN7RG)
