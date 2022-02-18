@@ -36,4 +36,4 @@ As nice as the system sounds, it does come with some clear caveats that may infl
 
 ### Usage
 
-See the [documentation](#Documentation) to find out how to implmenet the system in your own experiences. An example place can be found in the [releases tab](https://github.com/Virshal/BufferModule/releases).
+See the [documentation](https://virshal.github.io/BufferModule/) to find out how to implmenet the system in your own experiences. An example place can be found in the [releases tab](https://github.com/Virshal/BufferModule/releases).
