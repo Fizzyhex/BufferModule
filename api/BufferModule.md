@@ -18,8 +18,6 @@ local buffer = BufferModule:CreateBuffer(script.Parent, "MyBuffer")
 - [Util](#utilregistertouchinterest)
   - [Util.RegisterTouchInterest](#utilregistertouchinterest)
 
-## Properties
-
 ## Methods
 
 ### CreateBuffer
@@ -33,5 +31,3 @@ Equivilant to `BufferModule.new()` and `BufferModule.Buffer.new()`
 `BufferModule.Util.RegisterTouchInterest(part: BasePart)`
 
 Creates a [TouchTransmitter](https://developer.roblox.com/api-reference/class/TouchTransmitter) as a child of the provided Instance. If a [TouchTransmitter](https://developer.roblox.com/api-reference/class/TouchTransmitter) already exists under the provided [Instance](https://developer.roblox.com/api-reference/class/Instance) then nothing will be created.
-
-## Events
