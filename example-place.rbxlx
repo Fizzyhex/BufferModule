@@ -80,27 +80,27 @@
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<CoordinateFrame name="CFrame">
-					<X>-16.7127724</X>
-					<Y>69.0705032</Y>
-					<Z>-4.07972956</Z>
-					<R00>-0.837605178</R00>
-					<R01>-0.248008564</R01>
-					<R02>0.486733377</R02>
+					<X>-40.7840309</X>
+					<Y>63.5240173</Y>
+					<Z>-10.4107304</Z>
+					<R00>-0.590711534</R00>
+					<R01>0.650543213</R01>
+					<R02>-0.477339894</R02>
 					<R10>-0</R10>
-					<R11>0.891002476</R11>
-					<R12>0.453998506</R12>
-					<R20>-0.546276152</R20>
-					<R21>0.380271494</R21>
-					<R22>-0.746308267</R22>
+					<R11>0.591585159</R11>
+					<R12>0.806242526</R12>
+					<R20>0.806882799</R20>
+					<R21>0.476256758</R21>
+					<R22>-0.349456191</R22>
 				</CoordinateFrame>
 				<Ref name="CameraSubject">null</Ref>
 				<token name="CameraType">0</token>
 				<float name="FieldOfView">70</float>
 				<token name="FieldOfViewMode">0</token>
 				<CoordinateFrame name="Focus">
-					<X>-17.6862392</X>
-					<Y>68.1625061</Y>
-					<Z>-2.5871129</Z>
+					<X>-39.8293495</X>
+					<Y>61.9115295</Y>
+					<Z>-9.71181679</Z>
 					<R00>1</R00>
 					<R01>0</R01>
 					<R02>0</R02>
@@ -81299,6 +81299,7 @@ Remote.Parent = game:GetService("ReplicatedStorage")]]></ProtectedString>
 				<string name="Name">BufferModule</string>
 				<string name="ScriptGuid">{D1D64A6C-6208-49EA-A2B7-2FEC6CEC7E34}</string>
 				<ProtectedString name="Source"><![CDATA[-- Virshal (Roblox @metaVirshal), 2022
+-- github/Virshal/BufferModule
 
 local Types = require(script:WaitForChild("Types"))
 
@@ -82792,7 +82793,7 @@ function Export:AddItem(item: Instance)
 	
 	CollectionService:AddTag(item, "BufferItem")
 	item:SetAttribute("BufferPopped", false)
-	ApplyGuards(item)
+	ApplyItemGuards(item)
 	
 	if #self:GetUnsortedItems() > 0 then
 		self._bufferOrder += 1
