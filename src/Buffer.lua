@@ -377,7 +377,7 @@ function Export:AddItem(item: Instance)
 	
 	CollectionService:AddTag(item, "BufferItem")
 	item:SetAttribute("BufferPopped", false)
-	ApplyGuards(item)
+	ApplyItemGuards(item)
 	
 	if #self:GetUnsortedItems() > 0 then
 		self._bufferOrder += 1

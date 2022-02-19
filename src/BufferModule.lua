@@ -1,4 +1,5 @@
 -- Virshal (Roblox @metaVirshal), 2022
+-- github/Virshal/BufferModule
 
 local Types = require(script:WaitForChild("Types"))
 
