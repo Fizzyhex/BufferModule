@@ -29,7 +29,7 @@ Buffered items are held suspended far away from the play area. When the client n
 As nice as the system sounds, it does come with some clear caveats that may influence if you decide to use this system over something else:
 
 - This method is not supported natively by the Roblox Engine. This comes with some weird downsides, such as how buffered items need to be stored as descendants of the Workspace, or how buffered items cannot be Anchored until they are removed from the buffer.
-- The client has control over the physicxs of items in the buffer. This comes with the usual security concerns of giving the client [NetworkOwnership](https://developer.roblox.com/articles/Network-Ownership) over parts.
+- The client has control over the physics of items in the buffer. This comes with the usual security concerns of giving the client [NetworkOwnership](https://developer.roblox.com/articles/Network-Ownership) over parts.
 
 ## Getting Started
 
