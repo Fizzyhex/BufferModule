@@ -20,7 +20,7 @@ A system built to help combat input latency when using physics on Roblox. This s
 
 ## How does this work?
 
-This module creates a Folder which stores all items added to the Buffer via the server, such as projectiles. When an item is added to the buffer it will have its [NetworkOwnership](https://developer.roblox.com/articles/Network-Ownership) assigned to whichever player is given ownership over the buffer (e.g the player who is holding a weapon).
+This module creates a Folder that stores all items added to the Buffer via the server, such as projectiles. When an item is added to the buffer it will have its [NetworkOwnership](https://developer.roblox.com/articles/Network-Ownership) assigned to whichever player is given ownership over the buffer (e.g the player who is holding a weapon).
 
 Buffered items are held suspended far away from the play area. When the client needs to create a new projectile, such as when the player activates a weapon, instead of creating a new Instance we instead pull an existing one from the Buffer. Since the Instance already exists and we have NetworkOwnership over it, we can instantly start controlling the physics of the item.
 
