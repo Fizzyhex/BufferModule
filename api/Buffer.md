@@ -18,7 +18,7 @@ local buffer = BufferModule.new(tool, "ProjectileBuffer")
 
 - [Properties](#properties)
   - [INSTANCE](#instance-read-only)
-  - [itemContainer](#instance-read-only)
+  - [itemContainer](#itemcontainer-read-only)
 - [Methods](#methods)
   - [new()](#new)
   - [Is()](#is)
@@ -49,7 +49,7 @@ References the folder created by the Buffer to store items. The folder (in most 
 ### new
 - Buffer.new(attachTo: [Instance](https://developer.roblox.com/api-reference/class/Instance), name: string?): Buffer
 
-Constructs a new Buffer object. If no name is provided, the Buffer's [Item Container](#itemcontainer) will be called 'UnnamedBuffer' by default.
+Constructs a new Buffer object. If no name is provided, the Buffer's [Item Container](#itemcontainer-read-only) will be called 'UnnamedBuffer' by default.
 
 **Note:** If you want to have multiple Buffers underneath the same object, a name **must** be provided to avoid conflict!
 
@@ -61,7 +61,7 @@ Returns true/false if the provided object is a Buffer.
 ### Destroy
 - Buffer:Destroy():
 
-A destructor function that disconnects all script connections. If called on the server, then the Buffer's [Item Container](#itemcontainer) will also be destroyed.
+A destructor function that disconnects all script connections. If called on the server, then the Buffer's [Item Container](#itemcontainer-read-only) will also be destroyed.
 
 ### GetUnsortedItems
 
