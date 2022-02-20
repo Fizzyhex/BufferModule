@@ -100,15 +100,21 @@ If true, the Buffer will automatically refill when it goes underneath the thresh
 The Buffer will not refill automatically by default.
 
 ```lua
+-- SERVER
+local tool = script.Parent
 local buffer = BufferModule.new(tool, "ProjectileBuffer") -- Creates a new buffer.
 
 buffer:SetItemConstructor(function() -- Set the function to be called when creating items for the buffer.
   return Instance.new("BasePart")
 end)
 
-buffer:SetAutoRefillEnabled(true) -- Set the buffer to auto refill.
+buffer:SetMinimumItems(18)
+-- Set the buffer to auto refill. 
+-- This means that there will be 18 items in the buffer at all times.
+buffer:SetAutoRefillEnabled(true) 
 
 tool.Activated:Connect(function()
+  -- Give whoever has the tool equipped ownership over the buffer
   buffer:SetCurrentPlayer(Players:GetPlayerFromCharacter(tool.Parent))
   
   -- Spawn 3 parts in the Workspace
@@ -117,6 +123,25 @@ tool.Activated:Connect(function()
     local item: BasePart = buffer:PopItem()
     -- Reparent the item to the workspace
     item.Parent = workspace
+  end
+end)
+```
+
+```lua
+-- CLIENT
+local tool = script.Parent
+local buffer = BufferModule.new(tool, "ProjectileBuffer") -- Creates a new buffer.
+
+tool.Activated:Connect(function()
+  -- Spawn 3 parts in the Workspace
+  for i = 1, 3 do
+    -- Pop an item out of the buffer
+    local item: BasePart = buffer:PopItem()
+    -- Make sure the item is not nil, as it will be if the buffer is empty.
+    if item then
+      -- Reparent the item to the workspace
+      item.Parent = workspace
+    end
   end
 end)
 ```
