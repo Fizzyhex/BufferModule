@@ -149,12 +149,12 @@ end)
 ### <span class="server-prefix">Server:</span> GetCurrentPlayer
 `Buffer:GetCurrentPlayer(): Player?`
 
-Returns the player that currently has ownership over the Buffer.
+Returns the player that currently has ownership over the Buffer. Returns `nil` if no player owns it.
 
 ### <span class="server-prefix">Server:</span> SetMinimumItems
 `Buffer:SetMinimumItems(amount: number): self`
 
-Returns the player that currently has ownership over the Buffer. Returns `nil` if no player owns it.
+Sets the amount of items the Buffer will have when it is refilled.
 
 ### <span class="server-prefix">Server:</span> SetCurrentPlayer
 `Buffer:SetCurrentPlayer(player: Player?):`
