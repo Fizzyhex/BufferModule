@@ -12,7 +12,7 @@ An object created when calling [`BufferModule:CreateBuffer()`](/BufferModule#Cre
 local tool = script.Parent
 local BufferModule = require(somewhere.BufferModule)
 
--- Create a buffer attached to the tool this script is in and name it 'Projectile Buffer'
+-- Create a buffer attached to the tool this script is in and name it 'ProjectileBuffer'
 local buffer = BufferModule.new(tool, "ProjectileBuffer")
 ```
 
