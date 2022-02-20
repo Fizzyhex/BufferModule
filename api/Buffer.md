@@ -76,8 +76,20 @@ Refills the buffer using the provided function set with `SetItemConstructer`. Th
 
 ```lua
 buffer:SetMinimumItems(4) -- Set the amount the buffer will refill to.
+print(#buffer:GetUnsortedItems())
 buffer:Refill() -- Refill the buffer. This will add 4 items to the buffer's ItemContainer.
+print(#buffer:GetUnsortedItems())
 Buffer:Refill() -- The buffer is already full, so this will do nothing.
+local item = Buffer:PopItem() -- This will knock the buffer down to 3 items.
+print(#buffer:GetUnsortedItems())
+Buffer:Refill() -- This will add 1 item to the buffer to take it back up to 4.
+print(#buffer:GetUnsortedItems())
+
+OUTPUT
+> 0
+> 4
+> 3
+> 4
 ```
 
 ### <span class="server-prefix">Server:</span> SetAutoRefillEnabled
