@@ -1,5 +1,3 @@
-local Types = require(script.Parent.Types)
-
 local CollectionService = game:GetService("CollectionService")
 local RunService = game:GetService("RunService")
 local Players = game:GetService("Players")
@@ -359,7 +357,7 @@ function Export:AddItem(item: Instance)
 	
 	local currentPlayer = self:GetCurrentPlayer()
 	
-	-- Pick a position to store the projectile in. This should be far away from the playable area.
+	-- Store projectile outside of play area to prevent it from being visible.
 	local lockPosition = Vector3.new(randomGen:NextInteger(-10^2, 10^2), 100000 - randomGen:NextInteger(0, 100), randomGen:NextInteger(-10^2, 10^2))
 	item:PivotTo(CFrame.new(lockPosition))
 	
@@ -384,10 +382,9 @@ function Export:AddItem(item: Instance)
 	end
 	item:SetAttribute("_bufferOrder", self._bufferOrder)
 	
-	-- Parent the item to the buffer.
 	item.Parent = self.itemContainer
 	
-	-- Set ownership after the item is parented.
+	-- Set ownership after the item is parented to prevent errors.
 	if primaryPart:CanSetNetworkOwnership() then
 		primaryPart:SetNetworkOwner(currentPlayer)
 	end

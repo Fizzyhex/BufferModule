@@ -1,8 +1,6 @@
 -- Virshal (Roblox @metaVirshal), 2022
 -- github/Virshal/BufferModule
 
-local Types = require(script:WaitForChild("Types"))
-
 local RunService = game:GetService("RunService")
 
 local Configuration = require(script:WaitForChild("Configuration"))

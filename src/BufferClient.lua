@@ -8,7 +8,6 @@ local Buffer = require(script.Parent.Buffer)
 local LOCAL_PLAYER = Players.LocalPlayer
 local ENABLE_LOCAL_COLLISIONS = Configuration.ENABLE_LOCAL_COLLISIONS
 local HIDE_UNPOPPED_ITEMS = Configuration.HIDE_UNPOPPED_ITEMS
-local STREAMING_COMPATIBILITY = workspace.StreamingEnabled and Configuration.STREAMING_ENABLED_COMPATIBILITY
 local PROJECTILE_TAG = "BufferItem"
 local REFERENCE_TAG = "BufferReference"
 local TOOL_TAG = "BufferTool"
