@@ -4,7 +4,7 @@
 
 ## Documentation
 
-[The documentation can be found here](https://virshal.github.io/BufferModule/).
+[The documentation can be found here](https://fizzyhex.github.io/BufferModule/).
 
 ## About
 
