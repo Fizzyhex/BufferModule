@@ -1,5 +1,5 @@
--- Virshal (Roblox @metaVirshal), 2022
--- github/Virshal/BufferModule
+-- Fizzyhex (Roblox @Fizzyhex), 2022
+-- github/Fizzyhex/BufferModule
 
 local RunService = game:GetService("RunService")
 
