@@ -1,4 +1,4 @@
--- metavirtual, 2021
+-- Fizzyhex, 2021
 -- Handles garbage cleaning of instances created by buffers.
 -- This script will automatically reparent itself when the module is ran, but you can manually parent it to ServerScriptService.
 
