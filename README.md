@@ -32,13 +32,13 @@ As nice as the system sounds, it does come with some clear caveats that may infl
 
 ### Install
 
-1. Grab the latest release from the [releases tab](https://github.com/Virshal/BufferModule/releases) on GitHub.
+1. Grab the latest release from the [releases tab](https://github.com/Fizzyhex/BufferModule/releases) on GitHub.
 2. Insert the module somewhere accessible on the server/client, such as inside of `ReplicatedStorage`.
 3. Review the Configuration module under `BufferModule.Configuration` and tweak it to your liking.
 
 ### Usage
 
-See the [documentation](https://virshal.github.io/BufferModule/) to find out how to implmenet the system in your own experiences. An example place can be found in the [releases tab](https://github.com/Virshal/BufferModule/releases).
+See the [documentation](https://fizzyhex.github.io/BufferModule/) to find out how to implmenet the system in your own experiences. An example place can be found in the [releases tab](https://github.com/fizzyhex/BufferModule/releases).
 
 ---
 
